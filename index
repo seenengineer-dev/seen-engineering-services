@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="SEEN Engineering Services — Engineering with Vision. Electrical engineering and infrastructure consulting across Québec and Canada." />
+  <title>SEEN Engineering Services | Engineering with Vision</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand" href="#top" aria-label="SEEN Engineering Services Home">
+        <img class="brand-logo" src="assets/seen-logo.png" alt="SEEN Eye & Lightning logo" />
+        <div class="brand-text">
+          <div class="brand-name">SEEN</div>
+          <div class="brand-sub">Engineering Services</div>
+        </div>
+      </a>
+
+      <div class="topbar-actions">
+        <button class="btn btn-ghost" id="langToggle" aria-label="Toggle language">FR</button>
+        <a class="btn btn-primary" href="#contact" data-i18n="cta_header">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <p class="pill" data-i18n="pill">Professional Engineering • Québec & Canada</p>
+          <h1 data-i18n="h1">Engineering with Vision.</h1>
+          <p class="lead" data-i18n="lead">
+            SEEN Engineering Services provides clear, code-compliant, and constructible engineering solutions,
+            with a strong focus on electrical systems, power distribution, and infrastructure.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#services" data-i18n="cta_primary">Explore Services</a>
+            <a class="btn btn-outline" href="#contact" data-i18n="cta_secondary">Email Us</a>
+          </div>
+
+          <div class="trust">
+            <div class="trust-item">
+              <div class="trust-title" data-i18n="trust1_title">Bilingual</div>
+              <div class="trust-text" data-i18n="trust1_text">FR/EN deliverables</div>
+            </div>
+            <div class="trust-item">
+              <div class="trust-title" data-i18n="trust2_title">Compliant</div>
+              <div class="trust-text" data-i18n="trust2_text">Code-driven engineering</div>
+            </div>
+            <div class="trust-item">
+              <div class="trust-title" data-i18n="trust3_title">Practical</div>
+              <div class="trust-text" data-i18n="trust3_text">Buildable designs</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card hero-card">
+          <div class="hero-card-top">
+            <img class="hero-logo" src="assets/seen-logo.png" alt="SEEN logo" />
+            <div>
+              <h2 data-i18n="card_title">What we do</h2>
+              <p class="muted hero-card-sub" data-i18n="card_sub">
+                Professional engineering support — from concept to deliverables.
+              </p>
+            </div>
+          </div>
+
+          <ul class="checklist">
+            <li data-i18n="card_li1">Electrical engineering consulting & design</li>
+            <li data-i18n="card_li2">Power distribution & service entrance studies</li>
+            <li data-i18n="card_li3">Single-line diagrams & technical deliverables</li>
+            <li data-i18n="card_li4">Utility coordination (e.g., Hydro-Québec requests)</li>
+            <li data-i18n="card_li5">Engineering support for contractors & owners</li>
+          </ul>
+
+          <div class="mini">
+            <div class="mini-label" data-i18n="legal_label">Legal</div>
+            <div class="mini-text" data-i18n="legal_text">
+              SEEN Engineering Services Inc. • Operating in Québec as SEEN Services d’ingénierie
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2 data-i18n="services_h2">Services</h2>
+          <p class="muted" data-i18n="services_p">
+            Clear scope, clean deliverables, and code-compliant engineering.
+          </p>
+        </div>
+
+        <div class="grid3">
+          <article class="card">
+            <h3 data-i18n="s1_h3">Electrical Engineering</h3>
+            <p data-i18n="s1_p">Design, calculations, and documentation for building and infrastructure electrical systems.</p>
+            <ul class="bullets">
+              <li data-i18n="s1_li1">Load calculations & system sizing</li>
+              <li data-i18n="s1_li2">Single-line diagrams</li>
+              <li data-i18n="s1_li3">Specifications & engineering notes</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3 data-i18n="s2_h3">Power Distribution</h3>
+            <p data-i18n="s2_p">Service entrance strategy, distribution design, and constructible solutions.</p>
+            <ul class="bullets">
+              <li data-i18n="s2_li1">Service entrance & metering approach</li>
+              <li data-i18n="s2_li2">Equipment layouts & coordination</li>
+              <li data-i18n="s2_li3">Cost-aware engineering options</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3 data-i18n="s3_h3">Utility Coordination</h3>
+            <p data-i18n="s3_p">Support for requests, communications, and technical submissions to utilities.</p>
+            <ul class="bullets">
+              <li data-i18n="s3_li1">Hydro-Québec request packages</li>
+              <li data-i18n="s3_li2">Technical clarifications & follow-ups</li>
+              <li data-i18n="s3_li3">Revisions & submission tracking</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- VALUES -->
+    <section id="values" class="section alt">
+      <div class="container">
+        <div class="section-head">
+          <h2 data-i18n="values_h2">Core values</h2>
+          <p class="muted" data-i18n="values_p">What SEEN stands for.</p>
+        </div>
+
+        <div class="grid2">
+          <div class="card">
+            <h3 data-i18n="v1">Vision & Foresight</h3>
+            <p data-i18n="v1_p">We anticipate risks and constraints early to deliver durable solutions.</p>
+          </div>
+          <div class="card">
+            <h3 data-i18n="v2">Technical Excellence</h3>
+            <p data-i18n="v2_p">Code-driven engineering with rigorous, professional deliverables.</p>
+          </div>
+          <div class="card">
+            <h3 data-i18n="v3">Integrity & Accountability</h3>
+            <p data-i18n="v3_p">We stand behind our designs and professional judgment.</p>
+          </div>
+          <div class="card">
+            <h3 data-i18n="v4">Efficiency with Purpose</h3>
+            <p data-i18n="v4_p">Constructible, cost-aware solutions—no overdesign, no shortcuts.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT (ANONYMOUS) -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2 data-i18n="contact_h2">Contact</h2>
+          <p class="muted" data-i18n="contact_p">
+            For now, contact is email-only.
+          </p>
+        </div>
+
+        <div class="card contact-card">
+          <div class="contact-left">
+            <h3 data-i18n="contact_card_h3">Email</h3>
+            <p class="muted" data-i18n="contact_card_p">
+              Send us your project details and we’ll reply with next steps.
+            </p>
+          </div>
+          <div class="contact-right">
+            <a class="btn btn-primary" id="mailtoBtn"
+               href="mailto:seen.engineer@gmail.com?subject=SEEN%20Engineering%20Services%20-%20Project%20Inquiry"
+               data-i18n="email_btn">Email us</a>
+            <div class="mini-text muted email-text">seen.engineer@gmail.com</div>
+          </div>
+        </div>
+
+        <footer class="footer">
+          <div class="footer-left">
+            <div class="footer-brand">SEEN Engineering Services</div>
+            <div class="footer-sub" data-i18n="footer_sub">Engineering with Vision</div>
+          </div>
+          <div class="footer-right muted" data-i18n="footer_right">
+            © <span id="year"></span> SEEN Engineering Services Inc. • Operating in Québec as SEEN Services d’ingénierie
+          </div>
+        </footer>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
