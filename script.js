@@ -55,6 +55,17 @@ const i18n = {
     email_btn: "Email us",
     footer_sub: "Engineering with Vision",
     footer_right: "© "
+    f_company: "Company (optional)",
+f_phone: "Phone (optional)",
+f_project_type: "Project type",
+f_province: "Province / Territory",
+f_select_one: "Select one",
+f_files: "Attach files (PDF, drawings, images)",
+f_files_hint: "Tip: If uploads don’t work on your Formspree plan, remove this field and keep email-only attachments.",
+thanks_h2: "Thank you",
+thanks_p: "Your message has been sent successfully. We will get back to you shortly.",
+thanks_btn: "Back to home",
+
   },
   fr: {
     cta_header: "Nous joindre",
@@ -112,6 +123,17 @@ const i18n = {
     email_btn: "Nous écrire",
     footer_sub: "Engineering with Vision",
     footer_right: "© "
+  f_company: "Entreprise (optionnel)",
+f_phone: "Téléphone (optionnel)",
+f_project_type: "Type de projet",
+f_province: "Province / territoire",
+f_select_one: "Choisir",
+f_files: "Joindre des fichiers (PDF, plans, images)",
+f_files_hint: "Astuce : si le téléversement ne fonctionne pas avec votre forfait Formspree, retirez ce champ et utilisez le courriel pour les pièces jointes.",
+thanks_h2: "Merci",
+thanks_p: "Votre message a été envoyé avec succès. Nous vous répondrons sous peu.",
+thanks_btn: "Retour à l’accueil",
+
   }
 };
 
@@ -133,3 +155,20 @@ toggleBtn.addEventListener("click", () => {
   applyI18n();
 });
 applyI18n();
+// Subject formatting: "SEEN Inquiry | <Type> | <Province> | <Name or Company>"
+const form = document.getElementById("contactForm");
+if (form) {
+  form.addEventListener("submit", () => {
+    const name = (form.querySelector('input[name="name"]')?.value || "").trim();
+    const company = (form.querySelector('input[name="company"]')?.value || "").trim();
+    const projectType = (document.getElementById("projectType")?.value || "").trim();
+    const province = (document.getElementById("province")?.value || "").trim();
+
+    const who = company || name || "Client";
+    const subject = `SEEN Inquiry | ${projectType || "General"} | ${province || "NA"} | ${who}`;
+
+    const subjectField = document.getElementById("subjectField");
+    if (subjectField) subjectField.value = subject;
+  });
+}
+
