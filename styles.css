@@ -129,3 +129,16 @@ h1{font-size:46px;line-height:1.05;margin:14px 0 10px}
 .footer-brand{font-weight:850}
 .footer-sub{color:var(--muted);margin-top:4px;font-size:13px}
 .footer-right{font-size:13px}
+
+select{
+  width:100%;
+  padding:11px 12px;
+  border-radius:12px;
+  border:1px solid var(--line);
+  background:rgba(255,255,255,.03);
+  color:var(--text);
+  outline:none;
+}
+select:focus{border-color:rgba(122,167,255,.55)}
+select option{color:#0b0d12}
+.file-field input[type="file"]{margin-top:8px}
