@@ -11,7 +11,7 @@
 <body>
 <header class="topbar">
   <div class="container topbar-inner">
-    <a class="brand" href="index.html" aria-label="SEEN Engineering Services">
+    <a class="brand" href="index.html">
       <img class="brand-logo" src="assets/seen-logo.png" alt="SEEN logo" />
       <div class="brand-text">
         <div class="brand-name">SEEN</div>
@@ -20,7 +20,7 @@
     </a>
 
     <div class="topbar-actions">
-      <button class="btn btn-ghost" id="langToggle" aria-label="Toggle language">FR</button>
+      <button class="btn btn-ghost" id="langToggle">FR</button>
       <a class="btn btn-primary" href="#contact" data-i18n="cta_header">Contact</a>
     </div>
   </div>
@@ -43,21 +43,6 @@
         <a class="btn btn-primary" href="#services" data-i18n="cta_primary">Explore Services</a>
         <a class="btn btn-outline" href="#contact" data-i18n="cta_secondary">Contact</a>
       </div>
-
-      <div class="trust">
-        <div class="trust-item">
-          <div class="trust-title" data-i18n="trust1_title">Bilingual</div>
-          <div class="trust-text" data-i18n="trust1_text">FR / EN deliverables</div>
-        </div>
-        <div class="trust-item">
-          <div class="trust-title" data-i18n="trust2_title">Compliant</div>
-          <div class="trust-text" data-i18n="trust2_text">Code-driven engineering</div>
-        </div>
-        <div class="trust-item">
-          <div class="trust-title" data-i18n="trust3_title">Practical</div>
-          <div class="trust-text" data-i18n="trust3_text">Buildable designs</div>
-        </div>
-      </div>
     </div>
 
     <div class="card">
@@ -69,40 +54,6 @@
         <li data-i18n="card_li4">Utility coordination (Hydro-Québec)</li>
         <li data-i18n="card_li5">Engineering support for contractors & owners</li>
       </ul>
-
-      <div class="mini">
-        <div class="mini-label" data-i18n="legal_label">Legal</div>
-        <div class="mini-text" data-i18n="legal_text">
-          SEEN Engineering Services Inc. • Operating in Québec as SEEN Services d’ingénierie
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- SERVICES -->
-<section id="services" class="section">
-  <div class="container">
-    <div class="section-head">
-      <h2 data-i18n="services_h2">Services</h2>
-      <p class="muted" data-i18n="services_p">
-        Clear scope, clean deliverables, and code-compliant engineering.
-      </p>
-    </div>
-
-    <div class="grid3">
-      <div class="card">
-        <h3 data-i18n="s1_h3">Electrical Engineering</h3>
-        <p class="muted" data-i18n="s1_p">Design, calculations, and documentation.</p>
-      </div>
-      <div class="card">
-        <h3 data-i18n="s2_h3">Power Distribution</h3>
-        <p class="muted" data-i18n="s2_p">Service entrance, distribution, and metering strategy.</p>
-      </div>
-      <div class="card">
-        <h3 data-i18n="s3_h3">Utility Coordination</h3>
-        <p class="muted" data-i18n="s3_p">Hydro-Québec requests and technical follow-ups.</p>
-      </div>
     </div>
   </div>
 </section>
@@ -112,26 +63,18 @@
   <div class="container">
     <div class="section-head">
       <h2 data-i18n="contact_h2">Contact</h2>
-      <p class="muted" data-i18n="contact_p">
-        Contact us using the form below.
-      </p>
+      <p class="muted" data-i18n="contact_p">Contact us using the form below.</p>
     </div>
 
     <div class="card">
       <form id="contactForm"
             action="https://formspree.io/f/mdadglqd"
             method="POST"
-            enctype="multipart/form-data">
+            enctype="multipart/form-data"
+            autocomplete="off">
 
-        <!-- Anti-spam -->
         <input type="text" name="_gotcha" style="display:none">
-
-        <!-- Redirect after submit -->
-        <input type="hidden" name="_next"
-               value="https://seenengineer-dev.github.io/seen-engineering-services/thanks.html">
-
-        <!-- Subject populated by JS -->
-        <input type="hidden" name="_subject" id="subjectField" value="SEEN Inquiry">
+        <input type="hidden" name="_subject" id="subjectField">
 
         <div class="grid2">
           <label>
@@ -158,15 +101,13 @@
           </label>
 
           <label>
-            <span data-i18n="f_province">Province / Territory</span>
+            <span data-i18n="f_province">Province</span>
             <select id="province" name="province" required>
               <option value="" disabled selected data-i18n="f_select_one">Select one</option>
-              <option value="QC">Québec (QC)</option>
-              <option value="ON">Ontario (ON)</option>
-              <option value="AB">Alberta (AB)</option>
-              <option value="BC">British Columbia (BC)</option>
-              <option value="MB">Manitoba (MB)</option>
-              <option value="SK">Saskatchewan (SK)</option>
+              <option value="QC">Québec</option>
+              <option value="ON">Ontario</option>
+              <option value="AB">Alberta</option>
+              <option value="BC">British Columbia</option>
             </select>
           </label>
         </div>
@@ -176,23 +117,8 @@
           <textarea name="message" rows="6" required></textarea>
         </label>
 
-        <label class="file-field">
-          <span data-i18n="f_files">Attach files (PDF, drawings, images)</span>
-          <input type="file" name="attachments" multiple accept=".pdf,.dwg,.dxf,.png,.jpg,.jpeg">
-        </label>
-
         <button class="btn btn-primary" type="submit" data-i18n="f_submit">Send</button>
-
-        <div class="mini">
-          <div class="mini-text">
-            <a href="mailto:seen.engineer@gmail.com"
-               class="link"
-               data-i18n="contact_alt_email">
-              Or email us directly: seen.engineer@gmail.com
-            </a>
-          </div>
-        </div>
-
+        <p id="formStatus" class="muted" style="display:none;margin-top:10px;"></p>
       </form>
     </div>
   </div>
@@ -202,21 +128,17 @@
   <div class="container footer-inner">
     <div>
       <strong>SEEN Engineering Services</strong><br>
-      <span class="muted" data-i18n="footer_sub">Engineering with Vision</span>
+      <span class="muted">Engineering with Vision</span>
     </div>
     <div class="muted">
       © <span id="year"></span> SEEN Engineering Services Inc.<br>
-      <span data-i18n="footer_legal">Operating in Québec as SEEN Services d’ingénierie</span>
+      Operating in Québec as SEEN Services d’ingénierie
     </div>
   </div>
 </footer>
 
 </main>
 
-<script src="script.js?v=3"></script>
-<script>
-  document.getElementById("year").textContent = new Date().getFullYear();
-</script>
-
+<script src="script.js?v=11"></script>
 </body>
 </html>
