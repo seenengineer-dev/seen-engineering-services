@@ -17,23 +17,19 @@
         <div class="brand-sub">Engineering Services</div>
       </div>
     </a>
-
-    <div class="topbar-actions">
-      <button class="btn btn-ghost" id="langToggle">FR</button>
-      <a class="btn btn-primary" href="index.html">Home</a>
-    </div>
   </div>
 </header>
 
 <main class="section">
   <div class="container">
     <div class="card">
-      <h1 data-i18n="thanks_h2">Thank you</h1>
-      <p class="muted" data-i18n="thanks_p">
-        Your message has been sent successfully. We will get back to you shortly.
+      <h1>Thank you</h1>
+      <p class="muted">
+        Your message has been sent successfully.<br>
+        We will get back to you shortly.
       </p>
-      <a class="btn btn-outline" href="index.html" data-i18n="thanks_btn">
-        Back to home
+      <a href="index.html#contact" class="btn btn-outline">
+        Back to contact form
       </a>
     </div>
   </div>
@@ -41,18 +37,12 @@
 
 <footer class="footer">
   <div class="container footer-inner">
-    <div>
-      <strong>SEEN Engineering Services</strong><br>
-      <span class="muted">Engineering with Vision</span>
-    </div>
     <div class="muted">
-      © <span id="year"></span> SEEN Engineering Services Inc.<br>
-      Operating in Québec as SEEN Services d’ingénierie
+      © <span id="year"></span> SEEN Engineering Services Inc.
     </div>
   </div>
 </footer>
 
-<script src="script.js?v=2"></script>
 <script>
   document.getElementById("year").textContent = new Date().getFullYear();
 </script>
