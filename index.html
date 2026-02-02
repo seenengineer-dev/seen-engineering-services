@@ -11,16 +11,16 @@
 <body>
 <header class="topbar">
   <div class="container topbar-inner">
-    <a class="brand" href="index.html">
+    <a class="brand" href="index.html" aria-label="SEEN Engineering Services">
       <img class="brand-logo" src="assets/seen-logo.png" alt="SEEN logo" />
       <div class="brand-text">
         <div class="brand-name">SEEN</div>
-        <div class="brand-sub">Engineering Services</div>
+        <div class="brand-sub" data-i18n="brand_sub">Engineering Services</div>
       </div>
     </a>
 
     <div class="topbar-actions">
-      <button class="btn btn-ghost" id="langToggle">FR</button>
+      <button class="btn btn-ghost" id="langToggle" aria-label="Toggle language">FR</button>
       <a class="btn btn-primary" href="#contact" data-i18n="cta_header">Contact</a>
     </div>
   </div>
@@ -128,17 +128,17 @@
   <div class="container footer-inner">
     <div>
       <strong>SEEN Engineering Services</strong><br>
-      <span class="muted">Engineering with Vision</span>
+      <span class="muted" data-i18n="footer_sub">Engineering with Vision</span>
     </div>
     <div class="muted">
       © <span id="year"></span> SEEN Engineering Services Inc.<br>
-      Operating in Québec as SEEN Services d’ingénierie
+      <span data-i18n="footer_legal">Operating in Québec as SEEN Services d’ingénierie</span>
     </div>
   </div>
 </footer>
 
 </main>
 
-<script src="script.js?v=11"></script>
+<script src="script.js?v=12"></script>
 </body>
 </html>
