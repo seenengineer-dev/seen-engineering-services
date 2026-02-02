@@ -69,7 +69,7 @@ document.addEventListener("DOMContentLoaded", () => {
       cta_header: "Nous joindre",
       pill: "Génie professionnel • Québec & Canada",
       h1: "L’ingénierie avec vision.",
-      lead: "SEEN Engineering Services offre des solutions d’ingénierie claires, conformes aux codes et constructibles, avec un fort accent sur les systèmes électriques et la distribution de puissance.",
+      lead: "SEEN Ingénierie offre des solutions d’ingénierie claires, conformes aux codes et constructibles, avec un fort accent sur les systèmes électriques et la distribution de puissance.",
 
       trust1_title: "Bilingue",
       trust1_text: "Livrables FR/EN",
@@ -117,7 +117,7 @@ document.addEventListener("DOMContentLoaded", () => {
       contact_alt_label: "Alternative",
       contact_alt_email: "Ou écrivez-nous directement : seen.engineer@gmail.com",
 
-      footer_sub: "Engineering with Vision",
+      footer_sub: "Ingénierie avec Vision",
       footer_legal: "Exerçant au Québec sous le nom SEEN Services d’ingénierie",
 
       sending: "Envoi en cours…",
