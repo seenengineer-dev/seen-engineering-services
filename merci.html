@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Merci | SEEN Services d’ingénierie</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+<header class="topbar">
+  <div class="container topbar-inner">
+    <a class="brand" href="index.html" aria-label="SEEN Services d’ingénierie">
+      <img class="brand-logo" src="assets/seen-logo.png" alt="Logo SEEN" />
+      <div class="brand-text">
+        <div class="brand-name">SEEN</div>
+        <div class="brand-sub" data-i18n="brand_sub">Services d’ingénierie</div>
+      </div>
+    </a>
+
+    <div class="topbar-actions">
+      <button class="btn btn-ghost" id="langToggle" aria-label="Changer de langue">EN</button>
+      <a class="btn btn-primary" href="index.html" data-i18n="thanks_btn">Retour à l’accueil</a>
+    </div>
+  </div>
+</header>
+
+<main class="section">
+  <div class="container">
+    <div class="card">
+      <h1 data-i18n="thanks_h2">Merci</h1>
+      <p class="muted" data-i18n="thanks_p">
+        Votre message a été envoyé avec succès. Nous vous répondrons sous peu.
+      </p>
+      <a class="btn btn-outline" href="index.html#contact" data-i18n="thanks_btn">Retour à l’accueil</a>
+    </div>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <div>
+      <strong>SEEN Engineering Services</strong><br>
+      <span class="muted" data-i18n="footer_sub">L’ingénierie avec vision</span>
+    </div>
+    <div class="muted">
+      © <span id="year"></span> SEEN Engineering Services Inc.<br>
+      <span data-i18n="footer_legal">Exerçant au Québec sous le nom SEEN Services d’ingénierie</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js?v=14"></script>
+<script>
+  // Force French on this page by default
+  localStorage.setItem("seen_lang", "fr");
+</script>
+</body>
+</html>
